@@ -1,0 +1,291 @@
+
+/* .stream{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    border: black;
+} */
+#frame{
+    overflow:scroll;
+    
+}
+#searchWrap{
+    display:table-cell;
+    vertical-align:middle;
+    padding-left: 75px;
+}
+#searchTable{
+    display:table;
+}
+#display{
+    padding-top:175px;
+}
+#entireLogo{
+    display:table-cell;
+    vertical-align:middle;
+    padding-left: 50px;
+}
+#logoContainer{
+    display:table;
+}
+#twitchDashboardName{
+    vertical-align: middle; 
+    display: table-cell;
+    padding: 0px 0px 0px 25px;
+}
+#logo{
+    height:100px;
+    width:100px;
+}
+#twitchName{
+    /* float:left; */
+    color:#6441a5;
+    display: inline;
+    
+}
+#logoWrap{
+    display:table-cell;
+    vertical-align: middle;
+}
+#dashName{
+    color:black;
+    display: inline;
+}
+
+#logoContainer{
+    background-color: white;
+    float:left;
+    border: 3px solid black;
+    box-shadow: 3px 7px black;
+}
+.displayName{
+    color: #503484;;
+    max-width:800px;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.refreshButton:hover{
+    border-bottom: 3px solid #6441a5;
+    transition: 0.5s;
+}
+ul#gameInfo{
+    min-width: 900px;
+    margin: 20px;
+
+}
+/* ul#gameInfo > li{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    float: right;
+    overflow:hidden;
+    text-align:center;
+    border:2px solid #6441a5;
+    background-color:#a37fc8;
+    color:white;
+    text-decoration:none;
+    padding:10px 30px; 
+} */
+li.first{
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+}
+li.last{
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+ul#streamList > li{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    overflow: hidden;
+    border: 3px solid black;
+    box-shadow: 5px 10px;
+    background-color:white;
+    text-decoration:none;
+    padding:10px ; 
+    margin: 20px auto;
+    display: inline-block;
+}
+
+.streamInfo{
+    display: inline;
+}
+
+
+#searchBar{
+    /* border: 3px solid black;
+    padding:10px;
+    width:90%;
+    background-color: #6441a5; */
+}
+#title{
+    border: 3px solid black;
+    background-color: #503484;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    color:white;
+    /* padding: 20px 10px; */
+    text-align:center;
+    position: fixed;
+    width: 100%;
+    height: 150px;
+    margin-top: -10px;
+    margin-left: -10px;
+    display:table;
+}
+ul#navBar>li{
+    background-color: #a37fc8;
+    width: 45%;
+    border: 3px solid rgb(70, 49, 83);
+    text-decoration:none;
+    overflow:hidden;
+    display: inline-block;
+}
+
+.navButton{
+    font: 30px Arial;
+    color:  #6441a5;;
+    width: 50px;
+    text-align: center;
+    transition:.5s;
+    border-radius: 8px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#right{
+    float: right; 
+}
+#left{
+    float: left; 
+}
+#center{
+    display: inline;
+    font: 30px Arial;
+    color:  #6441a5;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+/* #searchInfo{
+    float: left; 
+} */
+#searchQuery{
+    height: 50px;
+    font-size: 20px;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #2a1c44;
+    border-radius: 10px;
+    border:  #6441a5ad;
+    display:table-cell;
+    vertical-align:middle;
+    width:500px;
+}
+#searchButton{
+    color:  white;
+    padding: 10px 10px;
+    display:table-cell;
+    vertical-align:middle;
+    font-size: 20px;
+    padding-left: 15px;
+}
+#searchButton:hover{
+    border-bottom: 3px solid white;
+    cursor: help;
+    transition: 0.5s;
+}
+
+.navButton:hover{
+    font: 30px Arial;
+    color:white;
+    background: #6441a5;
+    transition:.5s;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#returnButton{
+    color:  white;
+    vertical-align:middle;
+    font-size: 30px;
+    font-family: Arial, Helvetica, Helvetica Neue;
+    
+}
+#returnButton:hover{
+    font-size: 30px;
+    font-family: 30px Arial, Helvetica, Helvetica Neue;
+    transition:0.5s;
+    cursor: pointer;
+    border-bottom: 3px solid white;
+}
+.returnTable{
+    display:table-cell;
+    vertical-align:middle;
+    /* margin-right:500px; */
+}
+
+.paginate{
+    /* font: 15px Arial; */
+    /* padding-top:50%; */
+    
+}
+
+.pageBar{
+    z-index: 100000;
+    position:fixed;
+    padding: 0px 0px 0px 87%;
+}
+#buttonWrap{
+    display:table-cell;
+    vertical-align:middle;
+    padding-right:50px;
+}
+
+.gameThumbnail{
+    border: 3px black solid;
+    box-shadow: 2px 4px black;
+}
+.streamWrap{
+    display: table;
+    padding-bottom: 20px;
+}
+.streamTableRow{
+    display: table-row;
+}
+#gameCell{
+    display: table-cell;
+}
+#gameDesc{
+    font-family: Arial, Helvetica Neue,Helvetica,sans-serif;
+    font-size:20px;
+}
+ul#descAndInfo>li{
+    text-decoration:none;
+    overflow:hidden;
+    text-align:left;
+    min-width: 800px;
+    
+}
+#descAndInfo{
+    display:table-cell;
+    vertical-align:middle;
+}
+#gInfo{
+    display:table;
+}
+.gInfoContents{
+    display:table-cell;
+    vertical-align: middle;
+    background: #6441a585;
+    color: white;
+    font-size: 25px;
+    padding: 10px 20px;
+    font-family: Arial, Helvetica Neue,Helvetica,sans-serif;
+}
+#viewers{
+    padding-right: 30px;
+    border-top: solid black 3px;
+    border-bottom: solid black 3px;
+    border-left: solid black 3px;
+    border-top-left-radius: 25px;
+}
+#gameName{
+    padding-right: 30px;
+    border-top: solid black 3px;
+    border-bottom: solid black 3px;
+    border-right: solid black 3px;
+    border-bottom-right-radius: 25px;
+}

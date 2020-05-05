@@ -36,7 +36,6 @@
     width:100px;
 }
 #twitchName{
-    /* float:left; */
     color:#6441a5;
     display: inline;
     
@@ -70,17 +69,7 @@ ul#gameInfo{
     margin: 20px;
 
 }
-/* ul#gameInfo > li{
-    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-    float: right;
-    overflow:hidden;
-    text-align:center;
-    border:2px solid #6441a5;
-    background-color:#a37fc8;
-    color:white;
-    text-decoration:none;
-    padding:10px 30px; 
-} */
+
 li.first{
     border-top-left-radius:10px;
     border-bottom-left-radius:10px;
@@ -118,7 +107,6 @@ ul#streamList > li{
     background-color: #503484;
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     color:white;
-    /* padding: 20px 10px; */
     text-align:center;
     position: fixed;
     width: 100%;
@@ -161,9 +149,6 @@ ul#navBar>li{
     text-align: center;
 }
 
-/* #searchInfo{
-    float: left; 
-} */
 #searchQuery{
     height: 50px;
     font-size: 20px;
@@ -214,13 +199,6 @@ ul#navBar>li{
 .returnTable{
     display:table-cell;
     vertical-align:middle;
-    /* margin-right:500px; */
-}
-
-.paginate{
-    /* font: 15px Arial; */
-    /* padding-top:50%; */
-    
 }
 
 .pageBar{

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Stream from "./stream";
+import Stream from "../stream/index";
 import styles from './results.css';
 
 class Results extends Component {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import GameInfo from './gameInfo';
+import GameInfo from '../game-info/index';
 import styles from './stream.css'
 import styles from '../styles.css';
 

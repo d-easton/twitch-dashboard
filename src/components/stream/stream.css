@@ -1,0 +1,42 @@
+/* Stream display elements */
+.streamWrap{
+    display: table;
+    padding-bottom: 20px;
+}
+.streamTableRow{
+    display: table-row;
+}
+
+/* Streamed game display elements */
+#gameCell{
+    display: table-cell;
+}
+#gameDesc{
+    font-family: Arial, Helvetica Neue,Helvetica,sans-serif;
+    font-size:20px;
+}
+.gameThumbnail{
+    border: 3px black solid;
+    box-shadow: 2px 4px black;
+}
+
+/* Streamed game description elements */
+#descAndInfo{
+    display:table-cell;
+    vertical-align:middle;
+}
+ul#descAndInfo>li{
+    text-decoration:none;
+    overflow:hidden;
+    text-align:left;
+    min-width: 800px;
+}
+ul#gameInfo{
+    min-width: 900px;
+    margin: 20px;
+}
+.displayName{
+    color: #503484;;
+    max-width:800px;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}

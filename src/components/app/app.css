@@ -1,18 +1,59 @@
+/* Positional */
+#right{
+  float: right; 
+}
+#left{
+  float: left; 
+}
 
+/* Components */
 #frame{
   overflow:scroll;
 }
-
 #display{
   padding-top:175px;
 }
 
+/* Logo Elements */
+#entireLogo{
+  display:table-cell;
+  vertical-align:middle;
+  padding-left: 50px;
+}
+#logoContainer{
+  display:table;
+}
+#logoContainer{
+  background-color: white;
+  float:left;
+  border: 3px solid black;
+  box-shadow: 3px 7px black;
+}
 
+  /* Logo: Graphic portion */
+#logoWrap{
+  display:table-cell;
+  vertical-align: middle;
+}
 #logo{
   height:100px;
   width:100px;
 }
 
+  /* Logo: Text portion */
+#twitchDashboardName{
+  vertical-align: middle; 
+  display: table-cell;
+  padding: 0px 0px 0px 25px;
+}
+#twitchName{
+  color:#6441a5;
+  display: inline;
+}
+#dashName{
+  color:black;
+  display: inline;
+}
 #title{
   border: 3px solid black;
   background-color: #503484;
@@ -27,51 +68,15 @@
   display:table;
 }
 
-#entireLogo{
-  display:table-cell;
-  vertical-align:middle;
-  padding-left: 50px;
-}
-
-#twitchDashboardName{
-  vertical-align: middle; 
-  display: table-cell;
-  padding: 0px 0px 0px 25px;
-}
-
-#twitchName{
-  color:#6441a5;
-  display: inline;
-}
-
-#dashName{
-  color:black;
-  display: inline;
-}
-
-#right{
-  float: right; 
-}
-
-#left{
-  float: left; 
-}
-
-#logoWrap{
-  display:table-cell;
-  vertical-align: middle;
-}
-
+/* Searchbar elements */
 #searchWrap{
   display:table-cell;
   vertical-align:middle;
   padding-left: 75px;
 }
-
 #searchTable{
   display:table;
 }
-
 #searchQuery{
   height: 50px;
   font-size: 20px;
@@ -83,7 +88,6 @@
   vertical-align:middle;
   width:500px;
 }
-
 #searchButton{
   color:  white;
   padding: 10px 10px;
@@ -92,34 +96,30 @@
   font-size: 20px;
   padding-left: 15px;
 }
-
 #searchButton:hover{
   border-bottom: 3px solid white;
   cursor: help;
   transition: 0.5s;
 }
 
+/* Home button elements*/ 
 #buttonWrap{
   display:table-cell;
   vertical-align:middle;
   padding-right:50px;
 }
-
 #returnButton{
   color:  white;
   vertical-align:middle;
   font-size: 30px;
   font-family: Arial, Helvetica, Helvetica Neue;
-  
 }
-
 #returnButton:hover{
   font-size: 30px;
   font-family: 30px Arial, Helvetica, Helvetica Neue;
   transition:0.5s;
   cursor: pointer;
 }
-
 .returnTable{
   display:table-cell;
   vertical-align:middle;

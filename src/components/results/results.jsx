@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-// import StreamLister from "./streamLister";
 import Stream from "./stream";
+import styles from './results.css';
+
 class Results extends Component {
 //     constructor(props){
 //         super(props);
@@ -14,7 +15,6 @@ class Results extends Component {
             gameId = {gId}
             viewers = {v}
             image = {imgURL}
-            //these taken in to generate the description
             streamer = {user}
             start = {s}
             />);

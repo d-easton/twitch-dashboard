@@ -1,0 +1,14 @@
+/* Streamlist elements*/
+ul#streamList > li{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    overflow: hidden;
+    border: 3px solid black;
+    box-shadow: 5px 10px;
+    background-color:white;
+    text-decoration:none;
+    padding:10px ; 
+    margin: 20px auto;
+    display: inline-block;
+}
+
+/* TODO: Consider lift of inline stream styling? */

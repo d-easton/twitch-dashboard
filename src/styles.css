@@ -27,14 +27,19 @@ li.last{
     border-top-right-radius:10px;
     border-bottom-right-radius:10px;
 }
-
-
-
 .streamInfo{
     display: inline;
 }
+ul#navBar>li{
+    background-color: #a37fc8;
+    width: 45%;
+    border: 3px solid rgb(70, 49, 83);
+    text-decoration:none;
+    overflow:hidden;
+    display: inline-block;
+}
 
-
+/* unsure what to do with these */
 #searchBar{
     /* border: 3px solid black;
     padding:10px;
@@ -54,15 +59,6 @@ li.last{
     margin-left: -10px;
     display:table;
 }
-ul#navBar>li{
-    background-color: #a37fc8;
-    width: 45%;
-    border: 3px solid rgb(70, 49, 83);
-    text-decoration:none;
-    overflow:hidden;
-    display: inline-block;
-}
-
 /*
 order-bottom:{
     3px solid white;

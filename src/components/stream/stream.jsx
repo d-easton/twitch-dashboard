@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import GameInfo from './gameInfo';
+import styles from './stream.css'
 import styles from '../styles.css';
 
 class Stream extends Component {

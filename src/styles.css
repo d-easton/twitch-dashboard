@@ -1,21 +1,8 @@
-
 /* .stream{
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     border: black;
 } */
 
-
-
-#logoContainer{
-    display:table;
-}
-
-#logoContainer{
-    background-color: white;
-    float:left;
-    border: 3px solid black;
-    box-shadow: 3px 7px black;
-}
 .displayName{
     color: #503484;;
     max-width:800px;
@@ -28,7 +15,6 @@
 ul#gameInfo{
     min-width: 900px;
     margin: 20px;
-
 }
 
 li.first{
@@ -96,7 +82,6 @@ ul#navBar>li{
     vertical-align: top;
 }
 
-
 #center{
     display: inline;
     font: 30px Arial;
@@ -104,8 +89,6 @@ ul#navBar>li{
     padding: 10px 10px;
     text-align: center;
 }
-
-
 
 .navButton:hover{
     font: 30px Arial;
@@ -123,7 +106,6 @@ order-bottom: 3px solid white;
     position:fixed;
     padding: 0px 0px 0px 87%;
 }
-
 
 .gameThumbnail{
     border: 3px black solid;
@@ -148,8 +130,8 @@ ul#descAndInfo>li{
     overflow:hidden;
     text-align:left;
     min-width: 800px;
-    
 }
+
 #descAndInfo{
     display:table-cell;
     vertical-align:middle;

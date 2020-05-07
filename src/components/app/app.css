@@ -1,17 +1,7 @@
-/* Positional */
-#right{
-  float: right; 
-}
-#left{
-  float: left; 
-}
 
 /* Components */
 #frame{
   overflow:scroll;
-}
-#display{
-  padding-top:175px;
 }
 
 /* Logo Elements */

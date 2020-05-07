@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Results from './results.jsx';
-import styles from '../styles.css';
+import styles from './display-frame.css';
 
 class DisplayFrame extends Component {
 
@@ -23,7 +23,6 @@ class DisplayFrame extends Component {
 const NavBar = (props) =>{
     return ( 
         <div id = "navBar">
-            {/* <div className = "numberOfResults">Displaying 20 found streams</div> */}
             <div className = "pageBar">
                 <PrevButton  className="paginate" id="left" onClick={props.onClickPrev}/>
                 <div className="refreshButton" id="center" onClick={props.onClickRefresh} >{props.currentPage}</div>

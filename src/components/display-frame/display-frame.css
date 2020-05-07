@@ -1,0 +1,31 @@
+
+/* Navbar elements */
+.pageBar{
+    z-index: 100000;
+    position:fixed;
+    padding: 0px 0px 0px 87%;
+}
+.refreshButton:hover{
+    border-bottom: 3px solid #6441a5;
+    transition: 0.5s;
+}
+
+/* Navbutton elements */ 
+.navButton{
+    font: 30px Arial;
+    color:  #6441a5;;
+    width: 50px;
+    text-align: center;
+    transition:.5s;
+    border-radius: 8px;
+    display: inline-block;
+    vertical-align: top;
+}
+.navButton:hover{
+    font: 30px Arial;
+    color:white;
+    background: #6441a5;
+    transition:.5s;
+    border-radius: 50%;
+    cursor: pointer;
+}

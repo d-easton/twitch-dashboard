@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import DisplayFrame from "./displayFrame";
 import styles from './app.css';
+import styles from '../styles.css';
 
 class App extends Component {
     constructor(props){

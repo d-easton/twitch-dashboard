@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Results from './results.jsx';
 import styles from './display-frame.css';
+import styles from '../styles.css';
 
 class DisplayFrame extends Component {
 

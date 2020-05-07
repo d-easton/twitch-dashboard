@@ -1,0 +1,182 @@
+
+/* .stream{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    border: black;
+} */
+
+
+
+#logoContainer{
+    display:table;
+}
+
+#logoContainer{
+    background-color: white;
+    float:left;
+    border: 3px solid black;
+    box-shadow: 3px 7px black;
+}
+.displayName{
+    color: #503484;;
+    max-width:800px;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.refreshButton:hover{
+    border-bottom: 3px solid #6441a5;
+    transition: 0.5s;
+}
+ul#gameInfo{
+    min-width: 900px;
+    margin: 20px;
+
+}
+
+li.first{
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+}
+li.last{
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+ul#streamList > li{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    overflow: hidden;
+    border: 3px solid black;
+    box-shadow: 5px 10px;
+    background-color:white;
+    text-decoration:none;
+    padding:10px ; 
+    margin: 20px auto;
+    display: inline-block;
+}
+
+.streamInfo{
+    display: inline;
+}
+
+
+#searchBar{
+    /* border: 3px solid black;
+    padding:10px;
+    width:90%;
+    background-color: #6441a5; */
+}
+#title{
+    border: 3px solid black;
+    background-color: #503484;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    color:white;
+    text-align:center;
+    position: fixed;
+    width: 100%;
+    height: 150px;
+    margin-top: -10px;
+    margin-left: -10px;
+    display:table;
+}
+ul#navBar>li{
+    background-color: #a37fc8;
+    width: 45%;
+    border: 3px solid rgb(70, 49, 83);
+    text-decoration:none;
+    overflow:hidden;
+    display: inline-block;
+}
+
+.navButton{
+    font: 30px Arial;
+    color:  #6441a5;;
+    width: 50px;
+    text-align: center;
+    transition:.5s;
+    border-radius: 8px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+#center{
+    display: inline;
+    font: 30px Arial;
+    color:  #6441a5;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+
+
+.navButton:hover{
+    font: 30px Arial;
+    color:white;
+    background: #6441a5;
+    transition:.5s;
+    border-radius: 50%;
+    cursor: pointer;
+}
+order-bottom: 3px solid white;
+}
+
+.pageBar{
+    z-index: 100000;
+    position:fixed;
+    padding: 0px 0px 0px 87%;
+}
+
+
+.gameThumbnail{
+    border: 3px black solid;
+    box-shadow: 2px 4px black;
+}
+.streamWrap{
+    display: table;
+    padding-bottom: 20px;
+}
+.streamTableRow{
+    display: table-row;
+}
+#gameCell{
+    display: table-cell;
+}
+#gameDesc{
+    font-family: Arial, Helvetica Neue,Helvetica,sans-serif;
+    font-size:20px;
+}
+ul#descAndInfo>li{
+    text-decoration:none;
+    overflow:hidden;
+    text-align:left;
+    min-width: 800px;
+    
+}
+#descAndInfo{
+    display:table-cell;
+    vertical-align:middle;
+}
+#gInfo{
+    display:table;
+}
+.gInfoContents{
+    display:table-cell;
+    vertical-align: middle;
+    background: #6441a585;
+    color: white;
+    font-size: 25px;
+    padding: 10px 20px;
+    font-family: Arial, Helvetica Neue,Helvetica,sans-serif;
+}
+#viewers{
+    padding-right: 30px;
+    border-top: solid black 3px;
+    border-bottom: solid black 3px;
+    border-left: solid black 3px;
+    border-top-left-radius: 25px;
+}
+#gameName{
+    padding-right: 30px;
+    border-top: solid black 3px;
+    border-bottom: solid black 3px;
+    border-right: solid black 3px;
+    border-bottom-right-radius: 25px;
+}

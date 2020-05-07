@@ -1,0 +1,30 @@
+
+/* Game info display elements */
+#gInfo{
+    display:table;
+}
+.gInfoContents{
+    display:table-cell;
+    vertical-align: middle;
+    background: #6441a585;
+    color: white;
+    font-size: 25px;
+    padding: 10px 20px;
+    font-family: Arial, Helvetica Neue,Helvetica,sans-serif;
+}
+
+/* Game info text & font elements */
+#viewers{
+    padding-right: 30px;
+    border-top: solid black 3px;
+    border-bottom: solid black 3px;
+    border-left: solid black 3px;
+    border-top-left-radius: 25px;
+}
+#gameName{
+    padding-right: 30px;
+    border-top: solid black 3px;
+    border-bottom: solid black 3px;
+    border-right: solid black 3px;
+    border-bottom-right-radius: 25px;
+}

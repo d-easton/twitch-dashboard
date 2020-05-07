@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
+import styles from './game-info.css';
 import styles from '../styles.css';
 
 // CURRENT ISSUE: this often throws errors
-
 
 class GameInfo extends Component {
     constructor(props){
@@ -26,7 +26,6 @@ class GameInfo extends Component {
             })
             .then(res => res.json())
             .then(response => {
-                // console.log("Name, direct from query: ",response);
                 this.setState({            
                     info: response.data,
                     load:true,
@@ -34,9 +33,7 @@ class GameInfo extends Component {
             });
           } 
           fetchGameName()
-        //   console.log("State check [name]: ",this.state.name);
     }
-
 
     render() { 
         if(!this.state.load)    return <p>Loading...</p>

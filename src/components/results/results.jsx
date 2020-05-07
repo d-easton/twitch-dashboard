@@ -22,7 +22,7 @@ class Results extends Component {
 
     render() {
         // boolean load switch
-        if(!this.props.load)                return <p>Loading...</p> 
+        if(!this.props.load)  return <p>Loading...</p> 
         const streams = this.props.streams;
         const streamsList = streams.map(stream=>
 <           li key = {stream.id}> {

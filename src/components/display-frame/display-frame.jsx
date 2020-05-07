@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Results from './results.jsx';
+import Results from '../results/index';
 import styles from './display-frame.css';
 import styles from '../styles.css';
 

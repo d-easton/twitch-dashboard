@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
-import DisplayFrame from "./displayFrame";
+import DisplayFrame from "../display-frame/index";
 import styles from './app.css';
 import styles from '../styles.css';
 
 class App extends Component {
     constructor(props){
         super(props);
+        // @@@
         this.state = {
             token: "Bearer wtrxqfvjwna1pzfqz744fq0fqacsli",
             searchedGameName: "",
             gameInfo: null,
            
-           //FETCH STATE ELEMENTS
+            //TODO: Lift state to Redux -- mark other spots with @@@
+
+            //FETCH STATE ELEMENTS
             streams: null,              // stores the data array fetched from API
             load: false,                // boolean to test if fetch complete, because Javascript is asynchronous
             nextCursor: null,           // stored pagination curosr
@@ -29,7 +32,8 @@ class App extends Component {
     // fetch streams helper method
     fetchStreams = (url) => {
         console.log("FETCH STREAMS");
-        const token = this.state.token;             // are things like this needed? putting them bc i read something about asynchronicity
+        // @@@
+        const token = this.state.token;
         return fetch(url, {
           headers: {
             "Client-ID": "w2zhwrpvp17utnoy98je9xe95nfxul",
@@ -38,7 +42,7 @@ class App extends Component {
         })
         .then(res => res.json())
         .then(response => {
-        // Store streams in state, flip loaded boolean
+        // Store streams in state, flip loaded boolean  @@@
             this.setState({            
                 streams: response.data,
                 load:true,
@@ -50,6 +54,7 @@ class App extends Component {
 
     // fetch game ID
     fetchGameInfo = async (url) => {
+        // @@@
         const token = this.state.token;
         fetch(url, {
           headers: {
@@ -59,13 +64,14 @@ class App extends Component {
         })
         .then(res => res.json())
         .then(response => {
-        // Store streams in state, flip loaded boolean
+        // Store streams in state, flip loaded boolean @@@
             this.setState({            
                 gameInfo: response.data[0].id,
                 continue: true,
             }); 
         })
         .then(log => {
+            // @@@
             const gameId = this.state.gameInfo
             const searchUrl = "https://api.twitch.tv/helix/streams?game_id="+gameId;
             this.fetchStreams(searchUrl);
@@ -77,21 +83,25 @@ class App extends Component {
         const current = this.state.currentPage;
         let newPage = nav ? current+1 : current;
         if(nav===false&&current>1) newPage = current-1;
-        this.setState({
+        // @@@
+        this.setState({ 
             currentPage: newPage,
         });
 
         let newUrl = "https://api.twitch.tv/helix/streams"
         if(newPage!==1){
+            // @@@
             if(newPage>current)         newUrl = "https://api.twitch.tv/helix/streams?first=20&after="+this.state.nextCursor;
             else if(newPage<current)    newUrl = "https://api.twitch.tv/helix/streams?first=20&before="+this.state.nextCursor;
         }
         this.fetchStreams(newUrl);
     }
     handleRefresh = () =>{
+        // @@@
         let temp = this.state.currentCursor;
         let refreshUrl = "https://api.twitch.tv/helix/streams"
         if(this.state.currentPage!==1){
+            // @@@
             refreshUrl = "https://api.twitch.tv/helix/streams?first=20&after="+this.state.currentCursor;
         }
         this.fetchStreams(refreshUrl)     
@@ -101,7 +111,7 @@ class App extends Component {
     // handle return 
     handleReturn = () => {
         this.fetchStreams("https://api.twitch.tv/helix/streams");
-        this.setState({currentPage: 1});
+        this.setState({currentPage: 1}); // @@@
     }
 
     // helper method for searching for game
@@ -116,7 +126,8 @@ class App extends Component {
 
     // helper method for updating search field in state
     updateQuery = (event) => {
-        this.setState({
+        // @@@
+        this.setState({ 
             searchedGameName: event.target.value,
         });
     }
@@ -149,8 +160,9 @@ class App extends Component {
                     </div>
                 </div>
                 <DisplayFrame id = "display" 
-                    searchedGame = {this.state.searchedGameName} 
-                    streams = {this.state.streams}
+                    // @@@
+                    searchedGame = {this.state.searchedGameName}  
+                    streams = {this.state.streams}  
                     load = {this.state.load}
                     currentPage = {this.state.currentPage}
                     onClickNext = {next=>   this.handleClick(true)}

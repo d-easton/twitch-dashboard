@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styles from './game-info.css';
-import styles from '../styles.css';
-
+import stylesGlobal from '../../styles.css';
 // CURRENT ISSUE: this often throws errors
 
 class GameInfo extends Component {

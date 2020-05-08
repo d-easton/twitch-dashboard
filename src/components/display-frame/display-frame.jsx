@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Results from '../results/index';
 import styles from './display-frame.css';
-import styles from '../styles.css';
+import stylesGlobal from '../../styles.css';
 
 class DisplayFrame extends Component {
 

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import DisplayFrame from "../display-frame/index";
 import styles from './app.css';
-import styles from '../styles.css';
+import stylesGlobal from '../../styles.css';
+import logo from '<Enter absolute path to local image here/';
 
 class App extends Component {
     constructor(props){
@@ -143,7 +144,7 @@ class App extends Component {
                                 <h1 className="left" id="dashName">Dashboard</h1>
                             </span> 
                             <span id ="logoWrap"> 
-                                <img src ="http://www.newdesignfile.com/postpic/2014/02/twitch-logo-black-and-white_99117.png" id="logo"/>
+                                <img src ={logo} id="logo"/>
                             </span>
                         </div>
                     </div>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import GameInfo from '../game-info/index';
 import styles from './stream.css'
-import styles from '../styles.css';
+import stylesGlobal from '../../styles.css';
 
 class Stream extends Component {
     render() { 

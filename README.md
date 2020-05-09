@@ -5,8 +5,12 @@ I built this app in Spring of 2019 as a trail project for my software engineerin
 The current production version of this app is available [here](https://twitchdashboard.surge.sh/)
 
 
+### Tools Used
+- [React](https://reactjs.org/)
+- [Redux](https://redux.js.org/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ### Known Current Bugs
 - Pagination leading to all white page on page back and home -- might have to do with expired access tokens or state transfers?

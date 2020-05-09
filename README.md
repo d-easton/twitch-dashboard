@@ -7,3 +7,6 @@ The current production version of this app is available [here](twitchdashboard.s
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+### Known Current Bugs
+- Pagination leading to all white page on page back and home -- might have to do with expired access tokens or state transfers?

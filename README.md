@@ -2,7 +2,7 @@
 A simple React webapp that displays the top livestreams currently online at twitch.tv, with built-in game search and pagination features.
 I built this app in Spring of 2019 as a trail project for my software engineering internship at [Primed Mind](https://primedmind.com/).
 
-The current production version of this app is available [here](twitchdashboard.surge.sh)
+The current production version of this app is available [here](https://twitchdashboard.surge.sh/)
 
 
 
